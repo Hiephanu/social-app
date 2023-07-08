@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <h1>HOME</h1>
-    </div>
+    <h1>Profile</h1>
 </template>
 
 <script lang="ts" setup>

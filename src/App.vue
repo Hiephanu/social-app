@@ -4,7 +4,9 @@ import HomeLayout from "./layouts/HomeLayout.vue"
 
 <template>
   <div>
-    <HomeLayout />
+    <HomeLayout/>
   </div>
 </template>
+
+
 
