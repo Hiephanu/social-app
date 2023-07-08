@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/muli');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
 /*reset.css*/
       /* RESETS */
       *,
@@ -60,13 +60,14 @@
        
         margin: 0 auto;
         font:
-          1.6rem/1.25 "Muli",
+          1.6rem/1.25 "Sora",
           Helvetica,
           Arial,
           sans-serif;
         color: #4d4d4d;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
+        font-weight: 400;
       }
       @media screen and (min-width: 620px) {
         body {
