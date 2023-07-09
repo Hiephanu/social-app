@@ -2,5 +2,6 @@
     import SearchSection from './SearchSection.vue';
     import Header from './Header.vue';
     import SideBar from './SideBar.vue';
-    export {SearchSection, Header, SideBar};
+    import SearchBar from './SearchBar.vue';
+    export {SearchSection, Header, SideBar, SearchBar};
 </script>

@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import HomeLayout from "./layouts/HomeLayout.vue"
+import LayoutFactory from './layouts/LayoutFactory.vue';
 </script>
 
 <template>
   <div>
-    <HomeLayout/>
+    <LayoutFactory/>
   </div>
 </template>
+
+
 
 
 
