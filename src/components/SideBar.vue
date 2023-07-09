@@ -5,7 +5,7 @@
         </div>
 
         <div class="pages flex flex-col gap-y-8  mx-2">
-                <router-link to="/">
+                <router-link to="/" class="border-none">
                     <div class="page h-20 rounded-full items-center flex gap-x-4">
                         <div class="icon ml-4">
                             <i class="fa-solid fa-house"></i>
