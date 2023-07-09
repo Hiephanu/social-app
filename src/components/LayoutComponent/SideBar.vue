@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper flex flex-col text-3xl">
+    <div class="wrapper flex flex-col text-3xl overflow-hidden">
         <div class="logo h-40">
             <h3>Logo</h3>
         </div>
