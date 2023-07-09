@@ -1,8 +1,10 @@
 <template>
     <div>
-        <h1>HOME Page</h1>
+        <UploadStatusForm></UploadStatusForm>
+        <h1>Home page</h1>
     </div>
 </template>
 
 <script lang="ts" setup>
+    import UploadStatusForm from '@/components/CommonComponent/UploadStatusForm.vue';
 </script>
