@@ -10,22 +10,25 @@
             </div>
 
             <div class="content">
-                <router-view></router-view>
+                <slot />
             </div>
         </div>
 
         <div class="search-section border-2 border-rose-600 w-1/6 h-screen">
+            
+            <SearchBar/>
             <SearchSection></SearchSection>
         </div>
     </div>
 </template>
 
 <script lang="ts">
-    import { SideBar, SearchSection, Header } from "@/components/index.vue";
+    import { SideBar, SearchSection, Header, SearchBar } from "@/components/LayoutComponent/index.vue";
     export default{
         components: {
             Header,
             SearchSection,
+            SearchBar,
             SideBar
         }
     }
