@@ -1,7 +1,12 @@
 <template>
-    <h1>
-        AuthenLayout
-    </h1>
+    <BaseAuthen/>
     <slot/>
-    <router-link to="/">Back to Home</router-link>
 </template>
+<script lang="ts">
+import BaseAuthen from '@/components/LayoutComponent/authLayout/BaseAuthen.vue'
+export default{
+    components:{
+        BaseAuthen
+    }
+}
+</script>

@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts">
-    import { SideBar, SearchSection, Header, SearchBar } from "@/components/LayoutComponent/index.vue";
+    import { SideBar, SearchSection, Header, SearchBar } from "@/components/LayoutComponent/homeLayout/index.vue";
     export default{
         components: {
             Header,
