@@ -5,6 +5,7 @@ import Messages from "@/views/user/Messages/Messages.vue"
 import Explore from "@/views/user/Explore/Explore.vue"
 import Bookmark from "@/views/user/Bookmark/Bookmark.vue"
 import authenRoute from './authenRoute'
+
 const routes = [
     {path: "/", component: Home, meta:{layout: 'HomeLayout'},},
     {path: "/home", component: Home, meta:{layout: 'HomeLayout'}},
