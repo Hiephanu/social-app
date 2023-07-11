@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Login/>
+        <Login class=""/>
     </div>
 </template>
 <script setup lang="ts">

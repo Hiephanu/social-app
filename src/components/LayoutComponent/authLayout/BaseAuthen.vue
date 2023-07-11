@@ -30,11 +30,13 @@
       <div class="w-1/2 text-center">
         <p class="mt-8">Hoặc</p>
       </div>
-      <button
-        class="mt-8 p-4 bg-blue-400 w-1/2 text-center text-white rounded-full hover:bg-blue-300"
-      >
-        Tạo tài khoản
-      </button>
+      <RouterLink to="/authen/register">
+        <button
+          class="mt-8 p-4 bg-blue-400 w-1/2 text-center text-white rounded-full hover:bg-blue-300"
+        >
+          Tạo tài khoản
+        </button>
+      </RouterLink>
       <h2 class="mt-24">Bạn đã có tài khoản ?</h2>
       <RouterLink to="/authen/login">
         <div
@@ -46,4 +48,17 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref, Ref } from "vue";
+
+import { useRoute } from "vue-router";
+
+const checkRoute: Ref<Boolean> = ref(false);
+
+const route = useRoute();
+
+if (route.path.includes("login")) {
+  checkRoute.value = true;
+}
+</script>
+<style></style>

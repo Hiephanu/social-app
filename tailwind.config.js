@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        popup:'rgba(243, 243, 243, 0.8)',
+        popup:'rgba(0,0,0,0.4)',
       }
     },
   },
