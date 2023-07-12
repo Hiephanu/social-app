@@ -12,9 +12,9 @@
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^2.0.18",
     "firebase": "^10.0.0",
+    "pinia": "^2.1.4",
     "vue": "^3.2.47",
-    "vue-router": "^4.2.4",
-    "vuex": "^4.0.2"
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

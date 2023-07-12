@@ -25,9 +25,22 @@
       <input type="checkbox" name="" id="" class="mt-12">  Tôi hoàn toàn đồng ý
     </div>
     <div class="w-full mt-12 text-end">
-        <button class="p-4 bg-black text-white hover:bg-gray-600 mr-12 rounded-xl">
+        <button class="p-4 bg-black text-white hover:bg-gray-600 mr-12 rounded-xl" @click="submitRegister">
             Hoàn tất đăng ký
         </button>
     </div>
   </div>
 </template>
+<script lang="ts">
+  export default {
+    setup(props,{emit}){
+      const submitRegister= ()=>{
+        emit("submitRegister")
+      }
+      return{
+        submitRegister,
+        props
+      }
+    }
+  }
+</script>

@@ -42,15 +42,18 @@
                   type="text"
                   placeholder=" email"
                   class="border-2 border-gray-300 w-1/2 h-24 mt-12 rounded-2xl"
+                  v-model="email"
                 /><br />
                 <input
-                  type="text"
+                  type="password"
                   placeholder=" password"
                   class="border-2 border-gray-300 w-1/2 h-24 mt-12 rounded-2xl"
+                  v-model="password"
                 />
               </div>
               <button
                 class="w-1/2 mt-12 text-white border-2 border-black bg-black p-4 rounded-xl hover:bg-gray-600"
+                @click="login"
               >
                 Đăng nhập
               </button>
@@ -64,8 +67,21 @@
   </div>
 </template>
 <script setup lang="ts">
-import { onMounted, onUnmounted } from "vue";
+import { Ref ,ref , onMounted, onUnmounted } from "vue";
+import { useSignIn } from "@/composables/useSignIn";
 
+const {error,pending,signIn} =useSignIn()
+
+const email:Ref<string> =ref("")
+const password:Ref<string> =ref("")
+const login =async () => {
+    await signIn(email.value,password.value)
+    if(!error){
+      alert(error)
+    }
+    console.log(pending);
+    
+}
 onMounted(() => {
   document.body.style.overflow = "hidden";
 });
@@ -73,17 +89,4 @@ onUnmounted(() => {
   document.body.style.overflowY = "scroll";
 });
 </script>
-<style>
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-::-webkit-scrollbar-thumb {
-  background-color: #a0a0a0;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f0f0f0;
-}
-</style>
