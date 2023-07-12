@@ -14,9 +14,9 @@
             </div>
         </div>
 
-        <div class="search-section border-2 border-rose-600 w-1/6 h-screen">
+        <div class="search-section border-2 border-rose-600 w-1/4 h-screen">
             
-            <div class="sticky top-0">
+            <div class="sticky top-0 w-full">
                 <SearchBar/>
             </div>
             <SearchSection></SearchSection>

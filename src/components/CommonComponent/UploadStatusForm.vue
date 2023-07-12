@@ -12,10 +12,10 @@
                     </div>
                     <div class="flex justify-between py-2 mx-6 my-2">
                         <div class="flex gap-4 items-center">
-                            <i class="fa-solid fa-paperclip"></i>
-                            <i class="fa-solid fa-image"></i>
-                            <i class="fa-solid fa-face-smile"></i>
-                            <i class="fa-solid fa-clipboard"></i>
+                            <i class="cursor-pointer fa-solid fa-paperclip"></i>
+                            <i class="cursor-pointer fa-solid fa-image"></i>
+                            <i class="cursor-pointer fa-solid fa-face-smile"></i>
+                            <i class="cursor-pointer fa-solid fa-clipboard"></i>
                         </div>
                         
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-2xl ">Button</button>
