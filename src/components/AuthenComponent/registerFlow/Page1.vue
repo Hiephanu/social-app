@@ -44,15 +44,23 @@ import {ref,Ref} from 'vue'
 export default {
   setup(props,{emit}){
     console.log(props);
+    interface page1Data{
+      name:string,
+      phoneNumber:string,
+      date:Date,
+    }
+    
     const name:Ref<string>=ref("")
     const phoneNumber:Ref<string>=ref("")
-    const date:Ref<string>=ref("")
+    const date:Ref<Date>=ref(new Date())
     const changePage=()=>{
-      const page1Data={
-        name:name,
-        phoneNumber:phoneNumber,
-        date:date
+      const page1Data:page1Data={
+        name:name.value,
+        phoneNumber:phoneNumber.value,
+        date:date.value
       }
+      
+      
       emit("changePage",page1Data)
     }
     return {

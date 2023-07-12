@@ -6,14 +6,13 @@ import {getFirestore} from 'firebase/firestore'
 import { GoogleAuthProvider, getAuth } from 'firebase/auth';
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDZ7DHMLiPhz6y9wQj-lvCgK0jDQNoYch8",
-  authDomain: "moneymanagement-c6783.firebaseapp.com",
-  databaseURL: "https://moneymanagement-c6783-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "moneymanagement-c6783",
-  storageBucket: "moneymanagement-c6783.appspot.com",
-  messagingSenderId: "723534972049",
-  appId: "1:723534972049:web:a6eb38a3ac6b5a0a70eb30",
-  measurementId: "G-GG7B90PFRY"
+  apiKey: "AIzaSyDditAucmLIBCD6XFAiUfhoMhZsF9z5e5Q",
+  authDomain: "social-app-65974.firebaseapp.com",
+  projectId: "social-app-65974",
+  storageBucket: "social-app-65974.appspot.com",
+  messagingSenderId: "633005243560",
+  appId: "1:633005243560:web:829eed07afb0b279c1169d",
+  measurementId: "G-9K98R0674P"
   };
   const app= firebase.initializeApp(firebaseConfig)
 const projectAuth = firebase.auth()
