@@ -1,9 +1,9 @@
 <template>
     <div>
         <UploadStatusForm></UploadStatusForm>
-        <div class="">
-            <div class="" v-for = "post in posts">
-                <Post :name = 'post.name' :verified="post.verified" :avatar="post.avatar" :content="post.content" :img="post.img" :video="post.video"/>
+        <div class="" v-for = "post in posts">
+            <div class="border-2 border-grey-200 mt-2">
+                 <Post :name = 'post.name' :verified="post.verified" :avatar="post.avatar" :content="post.content" :img="post.img" :video="post.video"/>
             </div>
         </div>
     </div>

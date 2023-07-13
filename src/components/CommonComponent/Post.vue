@@ -1,5 +1,5 @@
 <template>
-    <div class="border-2 border-rose-600 w-full pb-8">
+    <div class="w-full pb-8">
         <div class="flex items-center p-4 pt-8">
             <div class="w-full flex flex-1 gap-8 pr-24">
                 <div class="w-16 h-16">

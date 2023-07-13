@@ -11,9 +11,6 @@
     export default defineComponent({
         props: {
             link: String,
-        },
-        mounted() {
-            console.log(this.link)
         }
     })
 </script>

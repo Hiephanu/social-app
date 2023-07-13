@@ -1,7 +1,7 @@
 <script lang="ts">
-    import SearchSection from './SearchSection.vue';
+    import SuggestSection from './SuggestSection.vue';
     import Header from './Header.vue';
     import SideBar from './SideBar.vue';
     import SearchBar from './SearchBar.vue';
-    export {SearchSection, Header, SideBar, SearchBar};
+    export {SuggestSection, Header, SideBar, SearchBar};
 </script>
