@@ -14,12 +14,12 @@
                     </div>
                 </router-link>
 
-            <router-link to="explore">
+            <router-link to="/friend">
                 <div class="page h-20 rounded-full items-center flex gap-x-4">
                     <div class="icon ml-4">
                         <i class="fa-solid fa-house"></i>
                     </div>
-                    <p>Explore</p>
+                    <p>Friend</p>
                 </div>
             </router-link>
 

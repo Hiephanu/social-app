@@ -60,6 +60,7 @@ const register = async () => {
     alert(err.value.message);
   }
   else {
+    alert("Sign up success")
     router.push('/authen/login')
   }
   console.log(isPending);
