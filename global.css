@@ -66,6 +66,23 @@
         -webkit-font-smoothing: antialiased;
         font-weight: 400;
       }
+<<<<<<< HEAD
+=======
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background-color: #a0a0a0;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background-color: #f0f0f0;
+        }
+      
+
+>>>>>>> 23c2f1e65289038e7e6c1e09fcccd3c4909756d2
       @media screen and (min-width: 620px) {
         body {
           font-size: 1.9rem;

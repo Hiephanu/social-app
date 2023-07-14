@@ -1,14 +1,14 @@
 <template>
     <div class="mb-4 leading-10">
-    <div v-if=" content.length > 150">
+    <div v-if=" _content.length > 150">
         <p v-if="!readMoreActivated">
-            {{content.slice(0, 150)}}...
+            {{_content.slice(0, 150)}}...
             <span class="cursor-pointer hover:underline" v-if="!readMoreActivated" @click="activateReadMore">
             Read more
         </span>
         </p>
     </div>
-    <span v-if="readMoreActivated || content.length <= 150" v-html="content"></span>
+    <span v-if="readMoreActivated || _content.length <= 150" v-html="content"></span>
 </div>
 </template>
 
@@ -20,13 +20,12 @@
         },
         data(props){
             return{
-                content: props.content ? props.content : "",
+                _content: props.content ? props.content : "",
                 readMoreActivated: false,
             }
         },
         methods:{
             activateReadMore(){
-                console.log(this.content)
                 this.readMoreActivated = true
             }
         }
