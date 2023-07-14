@@ -1,5 +1,5 @@
 <template>
-    <div class="border-2 border-rose-600 w-full pb-8">
+    <div class="w-full pb-8">
         <div class="flex items-center p-4 pt-8">
             <div class="w-full flex flex-1 gap-8 pr-24">
                 <div class="w-16 h-16">
@@ -30,30 +30,17 @@
     </div>
 </template>
 
-<script lang="ts" >
+<script lang="ts" setup>
     import ImageComponent from './ImageComponent.vue';
     import VideoComponent from './VideoComponent.vue';
     import ParagraphCompnent from './ParagraphCompnent.vue';
-    import { defineComponent } from 'vue';
 
-    export default defineComponent({
-        props:{
-            name: String,
-            verified: Boolean,
-            avatar: String,
-            content: String,
-            img: String,
-            video: String,
-        },
-        data(){
-            return{
-            }
-        },
-        components:{
-            ImageComponent,
-            VideoComponent,
-            ParagraphCompnent
-        }
+    defineProps({
+        name: String,
+        verified: Boolean,
+        avatar: String,
+        content: String,
+        img: String,
+        video: String,
     })
-
 </script>

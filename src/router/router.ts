@@ -3,6 +3,7 @@ import Home from '@/views/user/Home/Home.vue'
 import Profile from "@/views/user/Profile/Profile.vue"
 import Messages from "@/views/user/Messages/Messages.vue"
 import Explore from "@/views/user/Explore/Explore.vue"
+import Notification from "@/views/user/Notification/Notification.vue"
 import Bookmark from "@/views/user/Bookmark/Bookmark.vue"
 import authenRoute from './authenRoute'
 
@@ -20,6 +21,7 @@ const routes = [
 const router = createRouter({
         history: createWebHistory(),
         routes,
+        linkActiveClass: 'router-active'
     }
 )
 

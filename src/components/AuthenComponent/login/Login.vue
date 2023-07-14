@@ -67,26 +67,31 @@
   </div>
 </template>
 <script setup lang="ts">
-import { Ref ,ref , onMounted, onUnmounted } from "vue";
-import { useSignIn } from "@/composables/useSignIn";
+  import { Ref ,ref , onMounted, onUnmounted } from "vue";
+  import router from "@/router/router";
 
-const {error,pending,signIn} =useSignIn()
+  import { useSignIn } from "@/composables/useSignIn";
 
-const email:Ref<string> =ref("")
-const password:Ref<string> =ref("")
-const login =async () => {
-    await signIn(email.value,password.value)
-    if(!error){
-      alert(error)
-    }
-    console.log(pending);
-    
-}
-onMounted(() => {
-  document.body.style.overflow = "hidden";
-});
-onUnmounted(() => {
-  document.body.style.overflowY = "scroll";
-});
+  const {error,pending,signIn} =useSignIn()
+
+  const email:Ref<string> =ref("")
+  const password:Ref<string> =ref("")
+  const login =async () => {
+      await signIn(email.value,password.value)
+      if(!error){
+        alert(error)
+      } else {
+        router.push("/")
+      }
+      console.log(pending);
+      
+  }
+  onMounted(() => {
+    document.body.style.overflow = "hidden";
+  });
+  onUnmounted(() => {
+    document.body.style.overflowY = "scroll";
+  });
+
 </script>
 

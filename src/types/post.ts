@@ -2,7 +2,7 @@ interface post {
     id: number | string ,
     userId: number,
     content: string | File | number;
-    time:Date
+    create_at:Date
 }
 
 export default post
