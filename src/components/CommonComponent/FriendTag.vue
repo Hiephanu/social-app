@@ -1,14 +1,12 @@
 <template>
-    <div class="border-2 border-rose-500 w-full" :class="class">
+    <div class="border-2 border-slate-100 w-full py-2 mt-2" :class="class">
         <div class="flex items-center gap-4">
-            <ImageComponent imgType="avatar" :link="avatar" />
+            <ImageComponent imgType="avatar" :link=avatar />
 
             <div class="">
-                <div class="flex gap-4 items-center pb-4 pt-2">
+                <div class="flex gap-4 items-center">
                     <p class="font-bold text-2xl">{{name}}</p>
-                    <div v-if="verified">
-                        <i  class="fa-solid fa-check" style="color: #4287ff;"></i>
-                     </div>
+                    <i v-if="verified" class="fa-solid fa-check"  style="color: #4287ff;"></i>
                 </div>
                 
                 <p class="text-2xl">{{suggest_reason}}</p>
@@ -17,19 +15,14 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
     import ImageComponent from './ImageComponent.vue';
-    import { defineComponent } from 'vue';
-
-    export default defineComponent({
-        props:{
-            name:String,
-            verified:Boolean,
-            avatar:String,
-            suggest_reason:String,
-        },
-        mounted() {
-            console.log(this.avatar)
-        }
+    defineProps({
+        avatar: String,
+        name: String,
+        verified: Boolean,
+        suggest_reason: String,
+        class: String,
     })
+    
 </script>

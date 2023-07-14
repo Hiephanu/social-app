@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full border-2 border-black h-full font-sans">
+    <div class="w-full border-2 border-slate-200 rounded-lg h-full font-sans p-2 mt-2">
         <h3 class="font-bold pb-2">Suggested for you</h3>
         <div class="" v-for="friend in friends">
             <FriendTag :name="friend.name" :verified="friend.verified" :avatar="friend.avatar" :suggest_reason="friend.suggest_reason"/>
@@ -9,6 +9,7 @@
 
 <script  lang="ts">
     import FriendTag from '@/components/CommonComponent/FriendTag.vue';
+    import ImageComponent from '@/components/CommonComponent/ImageComponent.vue';
     import { defineComponent } from 'vue';
 
     export default defineComponent({
@@ -40,6 +41,7 @@
         },
         components:{
             FriendTag,
+            ImageComponent
         }
     })
 </script>

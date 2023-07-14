@@ -23,14 +23,6 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
     import { SideBar, SuggestSection, Header, SearchBar } from "@/components/LayoutComponent/homeLayout/index.vue";
-    export default{
-        components: {
-            Header,
-            SearchBar,
-            SuggestSection,
-            SideBar
-        }
-    }
 </script>

@@ -17,3 +17,4 @@ export interface postUser{
     phoneNumber:string,
     avata:string
 }
+ 

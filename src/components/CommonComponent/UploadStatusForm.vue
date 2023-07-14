@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper w-full max-w-full border-2 border-dashed border-slate-100">
+    <form class="wrapper w-full max-w-full border-2 border-dashed border-slate-100">
         <div class="flex items-center p-4 pt-12">
             <div class="flex flex-1 gap-4">
                 <div class="avatar overflow-hidden rounded-full w-20 h-20">
@@ -8,8 +8,11 @@
 
                 <div class="form flex-1">
                     <div class="flex-1">
-                        <input type="text" name="" id="" placeholder="What is happening?!" class="block border-2 h-20 rounded-full border-slate p-4 w-full ">
-                    </div>
+                        <div v-if="!show" @click="showTextArea" class="block border-2 h-20 rounded-full border-slate p-8 w-full cursor-pointer"></div>
+                        <div v-if="show">
+                            <textarea name="textarea" class="w-full border-2 border-rose-600 h-40" ></textarea>
+                        </div>
+                    </div> 
                     <div class="flex justify-between py-2 mx-6 my-2">
                         <div class="flex gap-4 items-center">
                             <i class="cursor-pointer fa-solid fa-paperclip"></i>
@@ -24,11 +27,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </template>
 
-<script lang="ts">
-    export default {
-        
+<script lang="ts" setup>
+    import { Ref, ref } from 'vue';
+
+    let show:Ref<boolean> = ref(false)
+
+    const showTextArea = () => {
+        show.value = !show.value
     }
 </script>

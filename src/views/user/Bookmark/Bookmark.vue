@@ -1,9 +1,5 @@
 <template>
     <h2>Bookmark</h2>
 </template>
-<script setup lang="ts"></script>
-<style>
-.hi{
-    text-decoration: none;
-}
-</style>
+<script lang="ts">
+</script>

@@ -30,30 +30,17 @@
     </div>
 </template>
 
-<script lang="ts" >
+<script lang="ts" setup>
     import ImageComponent from './ImageComponent.vue';
     import VideoComponent from './VideoComponent.vue';
     import ParagraphCompnent from './ParagraphCompnent.vue';
-    import { defineComponent } from 'vue';
 
-    export default defineComponent({
-        props:{
-            name: String,
-            verified: Boolean,
-            avatar: String,
-            content: String,
-            img: String,
-            video: String,
-        },
-        data(){
-            return{
-            }
-        },
-        components:{
-            ImageComponent,
-            VideoComponent,
-            ParagraphCompnent
-        }
+    defineProps({
+        name: String,
+        verified: Boolean,
+        avatar: String,
+        content: String,
+        img: String,
+        video: String,
     })
-
 </script>
