@@ -1,12 +1,21 @@
 <template>
-    <div class="flex w-full" >
-        <sideBar class="w-1/4 text-center ml-24"/>
-        <div class="w-2/4 mr-24">
-            <navBarFriend/>
-            <slot/>
+    <div class="wrapper flex justify-between gap-x-3 w-5/6 mx-auto" style="height: 2000px;" >
+        <div class="sidebar border-2 border-slate-100 w-1/5 max-w-1/5 h-screen sticky top-0" >
+                <sideBar/>
         </div>
-        <div>
-            <searchFriend/>
+
+        <div class="main-content flex-1">
+            <div class="header sticky top-0 bg-slate-50">
+                <navBarFriend/>
+            </div>
+
+            <div class="content">
+                <slot />
+            </div>
+        </div>
+
+        <div class="search-section w-1/4 h-screen">
+           <searchFriend/>
         </div>
     </div>
 </template>

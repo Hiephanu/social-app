@@ -19,11 +19,7 @@
                     <div class="icon ml-4">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-<<<<<<< HEAD
                     <p>Friend</p>
-=======
-                    <p class="name">Explore</p>
->>>>>>> 23c2f1e65289038e7e6c1e09fcccd3c4909756d2
                 </div>
             </router-link>
 
