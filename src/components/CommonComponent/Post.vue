@@ -13,6 +13,10 @@
                         <div v-if="verified">
                             <i  class="fa-solid fa-check" style="color: #4287ff;"></i>
                         </div>
+
+                        <div class="cursor-pointer" @click="deletePost">
+                            x
+                        </div>
                     </div>
                     
                     <ParagraphCompnent :content="content" />
@@ -30,17 +34,30 @@
     </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
     import ImageComponent from './ImageComponent.vue';
     import VideoComponent from './VideoComponent.vue';
     import ParagraphCompnent from './ParagraphCompnent.vue';
-
-    defineProps({
-        name: String,
-        verified: Boolean,
-        avatar: String,
-        content: String,
-        img: String,
-        video: String,
+    import { defineComponent } from 'vue';
+    import { doc, deleteDoc, collection } from "firebase/firestore";
+    import { db } from '@/configs/firebase';
+    export default defineComponent({
+        props: {
+            id: String,
+            name: String,
+            verified: Boolean,
+            avatar: String,
+            content: String,
+            img: String,
+            video: String,
+        }, components:{
+            ImageComponent, VideoComponent, ParagraphCompnent
+        }, 
+        methods: {
+            deletePost() {
+                deleteDoc(doc(collection(db, "posts"), this.id));
+            }
+        }
     })
+    
 </script>

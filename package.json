@@ -13,6 +13,7 @@
     "@heroicons/vue": "^2.0.18",
     "firebase": "^10.0.0",
     "pinia": "^2.1.4",
+    "uuid": "^9.0.0",
     "vue": "^3.2.47",
     "vue-router": "^4.2.4"
   },

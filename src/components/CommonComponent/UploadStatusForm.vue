@@ -38,20 +38,17 @@
     import ImageComponent from '@/components/CommonComponent/ImageComponent.vue';
     import post from "@/types/post"
     import uploadPost from "@/composables/upPosts";
-    
-    
 
     const postObj:Ref<post> = ref({
         name: "jthinh",
-        avatar: "source.unsplash.com/random",
+        avatar: "https://pbs.twimg.com/media/F1lnpU7WAAAighk?format=jpg&name=small",
         verified: true,
         content:"",
         create_at: new Date(),
-        image:"source.unsplash.com/random",
+        image:"https://pbs.twimg.com/media/F1lnpU7WAAAighk?format=jpg&name=small",
         video:"",
     })
 
-    
     let content:Ref<string> = ref("");
 
     const postMethod =async () => {
